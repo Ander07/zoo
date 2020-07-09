@@ -6,7 +6,7 @@ var port = 3300;
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://127.0.0.1:27017/ZooV2BV',{useNewUrlParser:true, useUnifiedTopology:true})
+mongoose.connect('url base de datos',{useNewUrlParser:true, useUnifiedTopology:true})
 .then(()=>{
     console.log('Conexion a la base de datos correcta');
     app.listen(port,()=>{
